@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <template id="owl_report_mrp_production" inherit_id="mrp.report_mrporder">
+            <xpath expr="//div[hasclass('page')]/div[2]/div[2]/span/div" position="replace">
+                <div t-field="o.id" t-options="{'widget': 'barcode', 'width': 600, 'height': 100, 'img_style': 'width:350px;height:60px'}"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
