@@ -6,7 +6,7 @@
     'description': """
       Ứng dụng quét mã vạch của đơn sản xuất, và chuyển hướng đến đơn sản xuất đó, giúp hỗ trợ cho việc chuyển ca, nhân viên có thể quét mã và sẽ biết trạng thái của các lệnh sản xuất đang được thực hiện dở dang !!
     """,
-    "price": "1000000",
+    "price": "0",
     "currency": "VND",
 
     'author': "tuanphamdvf",
