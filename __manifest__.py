@@ -17,7 +17,7 @@
     # for the full list
     'category': 'Uncategorized',
     'version': '1.2.1',
-
+    'demo_video_url': "https://www.youtube.com/watch?v=cHSC64DiXoo",
     # any module necessary for this one to work correctly
     'depends': ['base', 'tree_view', 'mrp'],
 
