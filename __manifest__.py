@@ -1,23 +1,22 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "OWL TTN",
-
-    'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
+    'name': "Barcode mrp production",
+    "version": "15",
+    "summary": "Ứng dụng quét mã đơn sản xuất, chuyển hướng đến đơn sản xuất đó",
     'description': """
-        Long description of module's purpose
+      Ứng dụng quét mã vạch của đơn sản xuất, và chuyển hướng đến đơn sản xuất đó, giúp hỗ trợ cho việc chuyển ca, nhân viên có thể quét mã và sẽ biết trạng thái của các lệnh sản xuất đang được thực hiện dở dang !!
     """,
+    "price": "1000000",
+    "currency": "VND",
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "tuanphamdvf",
+    'website': "TTNSOFTWARE.STORE",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '1.2.1',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'tree_view', 'mrp'],
