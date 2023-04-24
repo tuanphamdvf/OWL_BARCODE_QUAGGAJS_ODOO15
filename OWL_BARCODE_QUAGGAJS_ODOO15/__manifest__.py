@@ -7,7 +7,7 @@
     "price": "19",
     "currency": "EUR",
 
-    'author': "tuanphamdvf",
+    'author': "TTN SOFTWARE",
     'website': "TTNSOFTWARE.STORE",
     'category': 'App',
     'version': '15.1.1',
