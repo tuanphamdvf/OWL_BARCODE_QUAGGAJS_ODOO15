@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Barcode mrp production",
-    "summary": "Ứng dụng quét mã đơn sản xuất",
-    'description': """
-      Ứng dụng quét mã vạch của đơn sản xuất, và chuyển hướng đến đơn sản xuất đó, giúp hỗ trợ cho việc chuyển ca, nhân viên có thể quét mã và sẽ biết trạng thái của các lệnh sản xuất đang được thực hiện dở dang !!
+    'name': "Barcode production",
+    "summary": "Barcode scanner production",
+    'description': """The barcode scanning application of the production order can redirect to that production order, supporting the shift change process. Employees can scan the code and know the status of the unfinished production orders!!
     """,
-    "price": "0",
-    "currency": "VND",
+    "price": "19",
+    "currency": "EUR",
 
     'author': "tuanphamdvf",
     'website': "TTNSOFTWARE.STORE",
