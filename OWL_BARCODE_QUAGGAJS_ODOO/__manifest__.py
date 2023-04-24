@@ -6,7 +6,7 @@
     """,
     "price": "19",
     "currency": "EUR",
-
+    'license': 'GPL-3',
     'author': "TTN SOFTWARE",
     'website': "TTNSOFTWARE.STORE",
     'category': 'App',
