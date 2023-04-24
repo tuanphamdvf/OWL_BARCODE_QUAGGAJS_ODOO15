@@ -11,7 +11,6 @@
     'website': "TTNSOFTWARE.STORE",
     'category': 'App',
     'version': '15.1.1',
-    'demo_video_url': "https://www.youtube.com/watch?v=cHSC64DiXoo",
     'depends': ['base', 'mrp'],
 
     'data': [
@@ -26,14 +25,14 @@
     ],
     'assets': {
         'web.assets_qweb': [
-            'OWL/static/src/xml/*',
+            'OWL_BARCODE_QUAGGAJS_ODOO/static/src/xml/*',
         ],
         'web.assets_backend': [
-            'OWL/static/src/components/**/*',
-            'OWL/static/src/scss/**/*',
-            'OWL/static/lib/*',
-            'OWL/static/src/js/**/*',
-            'OWL/static/src/js/*',
+            'OWL_BARCODE_QUAGGAJS_ODOO/static/src/components/**/*',
+            'OWL_BARCODE_QUAGGAJS_ODOO/static/src/scss/**/*',
+            'OWL_BARCODE_QUAGGAJS_ODOO/static/lib/*',
+            'OWL_BARCODE_QUAGGAJS_ODOO/static/src/js/**/*',
+            'OWL_BARCODE_QUAGGAJS_ODOO/static/src/js/*',
         ],
 
     }

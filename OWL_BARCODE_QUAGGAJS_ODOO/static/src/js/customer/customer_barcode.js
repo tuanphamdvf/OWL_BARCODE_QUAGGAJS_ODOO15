@@ -51,8 +51,8 @@ class VeryBasicView extends owl.Component {
                 type: "LiveStream",
                 target: this.inputRef.el,
                 constraints: {
-                    width: 480,
-                    height: 320,
+                    width: 800,
+                    height: 600,
                     facingMode: "environment"
                 },
             },
@@ -128,7 +128,7 @@ class VeryBasicView extends owl.Component {
         });
 
         Quagga.onDetected(function (result) {
-            window.location.href = `/web#id=${result.codeResult.code}&menu_id=329&action=492&model=mrp.production&view_type=form`;
+            window.location.href = `/web#id=${result.codeResult.code}&menu_id=149&action=283&model=mrp.production&view_type=form`;
             Quagga.stop();
             console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         });
@@ -164,16 +164,16 @@ VeryBasicView.components = { Layout };
 VeryBasicView.template = owl.tags.xml/* xml */ `
 <div viewType="'barcode_view'" class="d-flex " style =" overflow: hidden !important;" >
 <div class="d-flex justify-content-center " style="height: 70vh;top:20px">
-  <div class="shadow  mb-5 mt-5 bg-white rounded " style="width: 480px; height: 320px;">
+  <div class="shadow  mb-5 mt-5 bg-white rounded " style="width: 800px; height: 600px;">
   <div t-ref="input"></div>
   </div>
 </div>
 <div class="d-flex justify-content-center align-items-center" style="width: 100wh; height:200px;">
 <a class =" d-flex justify-content-center align-items-center bg-primary hover col-6 text-white"   t-on-click ="onClick" style="height:200px;">
-<span class ="text-white font-weight-bold text-2xl ">Quét</span>
+<h1 class ="text-white font-weight-bold text-2xl ">SCAN</h1>
 </a>
 <a  class =" d-flex justify-content-center align-items-center bg-danger hover col-6 text-white"  t-on-click ="onStop" style="height:200px;">
-<span class ="text-white font-weight-bold text-2xl ">Dừng</span>
+<h1 class ="text-white font-weight-bold text-2xl ">STOP</h1>
 </a>
 </div>
 </div>`;
