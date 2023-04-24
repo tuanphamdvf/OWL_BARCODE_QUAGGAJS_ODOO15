@@ -10,8 +10,8 @@
     'author': "tuanphamdvf",
     'website': "TTNSOFTWARE.STORE",
     'license': 'LGPLv3',
-    'category': 'Uncategorized',
-    'version': '1.2.1',
+    'category': 'App',
+    'version': '15.1.1',
     'demo_video_url': "https://www.youtube.com/watch?v=cHSC64DiXoo",
     'depends': ['base', 'tree_view', 'mrp'],
 
