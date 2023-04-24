@@ -35,5 +35,6 @@
             'OWL_BARCODE_QUAGGAJS_ODOO/static/src/js/*',
         ],
 
-    }
+    },
+    'images': ['static/img/main_screenshot.gif']
 }
