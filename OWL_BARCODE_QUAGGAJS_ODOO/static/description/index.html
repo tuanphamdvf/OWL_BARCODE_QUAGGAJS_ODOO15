@@ -2,27 +2,107 @@
 <html>
 
 <head>
-    <title>How to use barcode scanning app with Odoo</title>
+    <title>TTN SOFTWARE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #tab-content-1,
+        #tab-content-2,
+        #tab-content-3,
+        #tab-content-4 {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        ;
+
+        .tab-content:not(:first-child) {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>How to use barcode scanning production</h1>
-    <h2>Installing the barcode scanning app on Odoo</h2>
-    <ol>
-        <li>Log in to your Odoo account.</li>
-        <li>Click on the application icon in the top left corner of the screen.</li>
-        <li>Click on "Apps" from the appearing menu.</li>
-        <li>Search for " Barcode mrp production" in the search field and click on it.</li>
-        <li>Click on the "Install" button to install the app.</li>
-        <li>Once installed, you can use the barcode scanning app in Odoo.</li>
-    </ol>
-    <h2>Using the barcode scanning app in Odoo</h2>
-    <ol>
-        <li>Log in to your Odoo account.</li>
-        <li>Select the "Barcode Scanning" app from the application menu.</li>
-        <li>Point the device's camera at the barcode on the production.</li>
-        <li>Once the barcode is scanned, Odoo will display the corresponding production information on the screen.</li>
-    </ol>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#" class="tab-link" data-tab="tab-1">Features</a></li>
+                    <li><a href="#" class="tab-link" data-tab="tab-2">Screenshort</a></li>
+                    <li><a href="#" class="tab-link" data-tab="tab-3">Demo</a></li>
+                    <li><a href="#" class="tab-link" data-tab="tab-4">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container col">
+        <div id="tab-1" class="tab-content">
+            <h2>Monitoring and processing production orders</h2>
+            <p>When scanning the production order code, the application will redirect to the corresponding production
+                order,
+                thereby helping to accurately and quickly manage the production orders</p>
+
+        </div>
+
+        <div id="tab-2" class="tab-content col">
+            <h2 style="text-align: center;">
+                Application screenshort
+            </h2>
+            <div class="col my-5 py-2">
+
+                <h3 style="height: 120px;text-align: center;" class="mt-4">Scanning</h3>
+
+
+                <img width="1200"
+                    src="https://res.cloudinary.com/djh7lsffd/image/upload/v1682393171/barcode%20production/ogideuaftxcaxvhnotms.png" />
+            </div>
+            <div class="col my-5 py-2">
+                <h3 style="height: 120px;text-align: center;" class="mt-4">Production</h3>
+                <img width="1200"
+                    src="https://res.cloudinary.com/djh7lsffd/image/upload/v1682393171/barcode%20production/y9pjoavsnpzkqwjzspww.png" />
+            </div>
+            <div class="col my-5 py-2">
+                <h3 style="height: 120px;text-align: center;" class="mt-4">List Production</h3>
+                <img width="1200"
+                    src="https://res.cloudinary.com/djh7lsffd/image/upload/v1682393171/barcode%20production/wd08uosuqi9vlzdfiq0c.png" />
+
+            </div>
+
+        </div>
+
+        <div id="tab-3" class="tab-content">
+            <h3 style="height: 120px;text-align: center;">Demo</h3>
+            <iframe width="1200" height="768" src="https://www.youtube.com/embed/35NvlvmD_7M" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="tab-4" class="tab-content">
+            <h3 style="height: 120px;text-align: center;"> Support</h3>
+            <p>Email: ttn.software@gmail.com</p>
+            <p>Discord: </p>
+            <p>Youtube: </p>
+        </div>
+    </div>
+</body>
+
+
+<script>
+    $(document).ready(function () {
+        $('.tab-link').click(function () {
+            var tab_id = $(this).attr('data-tab');
+
+            $('.tab-link').removeClass('active');
+            $('.tab-content').hide();
+
+            $(this).addClass('active');
+            $('#' + tab_id).show();
+        });
+    });
+</script>
 </body>
 
 </html>
