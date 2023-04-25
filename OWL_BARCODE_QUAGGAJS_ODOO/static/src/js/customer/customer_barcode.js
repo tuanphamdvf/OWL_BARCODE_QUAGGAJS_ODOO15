@@ -129,7 +129,10 @@ class VeryBasicView extends owl.Component {
 
         Quagga.onDetected(function (result) {
             window.location.href = `/web#id=${result.codeResult.code}&menu_id=149&action=283&model=mrp.production&view_type=form`;
+            Quagga.offProcessed();
+            Quagga.offDetected();
             Quagga.stop();
+
             console.log("Barcode detected and processed : [" + result.codeResult.code + "]", result);
         });
     }
@@ -140,12 +143,16 @@ class VeryBasicView extends owl.Component {
         this.startScanner()
     }
     onStop() {
+        Quagga.offProcessed();
+        Quagga.offDetected();
         console.log("stop")
         Quagga.stop();
+
     }
     set_scannerIsRunning(bol) {
         return bol
     }
+
     setup() {
         this.model = useModel(VeryBasicModel, {
             resModel: this.props.resModel,
