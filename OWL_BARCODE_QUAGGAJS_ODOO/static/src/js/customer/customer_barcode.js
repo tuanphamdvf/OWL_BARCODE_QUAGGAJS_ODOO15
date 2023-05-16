@@ -4,6 +4,9 @@ import { Layout } from "@web/views/layout";
 import { KeepLast } from "@web/core/utils/concurrency";
 import { Model, useModel } from "@web/views/helpers/model";
 const { useRef } = owl.hooks
+var rpc = require('web.rpc');
+
+
 
 class VeryBasicModel extends Model {
     static services = ["orm"];
@@ -40,8 +43,11 @@ class VeryBasicView extends owl.Component {
 
     }
 
-    mounted() {
+    async mounted() {
 
+
+        console.log('model', this.model)
+        console.log(rpc)
         this.startScanner()
     }
     startScanner() {
@@ -162,14 +168,14 @@ class VeryBasicView extends owl.Component {
     }
 }
 
-VeryBasicView.type = "barcode_view";
+VeryBasicView.type = "barcode_production_view";
 VeryBasicView.display_name = "VeryBasicView";
 VeryBasicView.icon = "fa-heart";
 VeryBasicView.multiRecord = true;
 VeryBasicView.searchMenuTypes = ["filter", "favorite"];
 VeryBasicView.components = { Layout };
 VeryBasicView.template = owl.tags.xml/* xml */ `
-<div viewType="'barcode_view'" class="d-flex " style =" overflow: hidden !important;" >
+<div viewType="'barcode_production_view'" class="d-flex " style =" overflow: hidden !important;" >
 <div class="d-flex justify-content-center " style="height: 70vh;top:20px">
   <div class="shadow  mb-5 mt-5 bg-white rounded " style="width: 800px; height: 600px;">
   <div t-ref="input"></div>
@@ -185,6 +191,6 @@ VeryBasicView.template = owl.tags.xml/* xml */ `
 </div>
 </div>`;
 
-registry.category("views").add("barcode_view", VeryBasicView);
+registry.category("views").add("barcode_production_view", VeryBasicView);
 
 

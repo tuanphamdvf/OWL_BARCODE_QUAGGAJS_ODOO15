@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
-        <menuitem id="owl_menuitem_root" name="Production" sequence="0"
-                  web_icon="OWL_BARCODE_QUAGGAJS_ODOO,static/img/38.png"/>
-        <menuitem id="owl_menuitem_root_widget" parent="owl_menuitem_root" name="Barcode" sequence="0"
-                  action="owl_customer_view"/>
+        <menuitem id="owl_barcode_menuitem_root" name="Production" sequence="0" web_icon="OWL_BARCODE_QUAGGAJS_ODOO,static/img/38.png"/>
+        <menuitem id="owl_barcode_menuitem_root_widget" parent="owl_barcode_menuitem_root" name="Barcode" sequence="0" action="owl_barcode_view"/>
     </data>
 </odoo>
